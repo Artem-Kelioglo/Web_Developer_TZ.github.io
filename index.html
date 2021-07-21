@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <a class="logo__link color" href="#">Backendless</a>
+      </div>
+      <div class="button-theme">
+        <div class="button-theme__buttons">
+          <button type="button" onclick="clickButton(0)" value="light" class="button-theme__button">Light Theme</button>
+          <button type="button" onclick="clickButton(1)" value="dark" class="button-theme__button">Dark Theme</button>
+          <button type="button" onclick="clickButton(2)" value="gray" class="button-theme__button">Gray Theme</button>
+        </div>
+        <div class="button-theme__input-radio">
+          <input onchange="clickRadio()" class="inputs-radio" value="light" id="radio-1" type="radio" checked name="checked">
+          <label   class="button-theme__input-radio-label" for="radio-1">
+            <span class="color">Light Theme</span>           
+          </label>
+          <input onchange="clickRadio()" class="inputs-radio" value="dark" id="radio-2" type="radio" name="checked">
+          <label class="button-theme__input-radio-label" for="radio-2">
+            <span class="color">Dark Theme</span>           
+          </label>
+          <input onchange="clickRadio()" class="inputs-radio" value="gray" id="radio-3" type="radio" name="checked">
+          <label class="button-theme__input-radio-label" for="radio-3">           
+            <span class="color">Gray Theme</span>
+          </label>
+        </div>
+        <div class="button-theme__select">
+          <select id="paint" onchange="changeSelect()" class="button-theme__selects" name="select-name" id="theme">
+            <option value="light">Light Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="gray">Gray Theme</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="block-title">
+        <h1>Backendless Gallery </h1>
+      </div>
+       <div class="gallery">
+      <div class="gallery__item  gallery__item--1"> 
+        <img src="./picture/1.jpg" class="gallery__img" alt="Image 1">
+      </div>
+      <div class="gallery__item  gallery__item--2"> 
+        <img src="./picture/2.jpg" class="gallery__img" alt="Image 2">
+      </div> 
+      <div class="gallery__item  gallery__item--3"> 
+        <img src="./picture/3.jpg" class="gallery__img" alt="Image 3">
+      </div> 
+      <div class="gallery__item  gallery__item--4"> 
+        <img src="./picture/4.jpg" class="gallery__img" alt="Image 4">
+      </div> 
+      <div class="gallery__item  gallery__item--5"> 
+        <img src="./picture/5.jpg" class="gallery__img" alt="Image 5">
+      </div>
+      <div class="gallery__item  gallery__item--6"> 
+        <img src="./picture/6.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--7"> 
+        <img src="./picture/10.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--8"> 
+        <img src="./picture/8.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--9"> 
+        <img src="./picture/9.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--10"> 
+        <img src="./picture/7.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--11"> 
+        <img src="./picture/11.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--12"> 
+        <img src="./picture/12.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--13"> 
+        <img src="./picture/13.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--14"> 
+        <img src="./picture/14.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--15"> 
+        <img src="./picture/15.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--16"> 
+        <img src="./picture/16.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--17"> 
+        <img src="./picture/17.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--18"> 
+        <img src="./picture/18.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--19"> 
+        <img src="./picture/25.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--20"> 
+        <img src="./picture/20.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--21"> 
+        <img src="./picture/21.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--22"> 
+        <img src="./picture/26.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--23"> 
+        <img src="./picture/23.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+      <div class="gallery__item  gallery__item--24"> 
+        <img src="./picture/24.jpg" class="gallery__img" alt="Image 6">
+      </div> 
+    </div>
+    </main>
+   <footer class="footer-block">
+    <div class="contact-block">
+      <a class="contact-block__www color" href="#">Backendless.com</a>
+      <a class="contact-block__tel color" href="tel:+555-555-555">555-555-555</a>
+    </div>
+    <div class="social-network">
+      <ul class="social-network__lists">
+        <li class="social-network__list">
+          <a class="social-network__list-link color" href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="social-network__list">
+          <a class="social-network__list-link color" href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="social-network__list">
+          <a class="social-network__list-link color" href="#"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li class="social-network__list">
+          <a class="social-network__list-link color" href="#"><i class="fab fa-telegram"></i></a>
+        </li>
+        <li class="social-network__list">
+          <a class="social-network__list-link color" href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li class="social-network__list">
+          <a class="social-network__list-link color" href="#"><i class="fab fa-vk"></i></a>
+        </li>
+        <li class="social-network__list">
+          <a class="social-network__list-link color" href="#"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+   </footer> 
+  </div>
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="foto-img">
+      
+    </div>
+  </div>
+  </div>
+</body>
+<script src="js.js"></script>
+</html>
